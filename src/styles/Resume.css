@@ -1,0 +1,274 @@
+.resume-text {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* ---------- FILTER ---------- */
+.resume-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.resume-filter button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #2b2b2b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-filter button:hover,
+.resume-filter button.active {
+  background: #facc15;
+  color: black;
+}
+
+/* ---------- UPLOAD ---------- */
+.resume-upload {
+  margin-bottom: 25px;
+}
+
+.upload-btn {
+  background: #7c3aed;
+  padding: 10px 18px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #6d28d9;
+}
+
+/* ---------- GRID ---------- */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ---------- CARD ---------- */
+.resume-card {
+  background: #2b2b2b;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.resume-card:hover {
+  transform: translateY(-8px);
+  background: #323232;
+}
+
+.resume-card h3 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+
+.resume-type {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* ---------- ICON ---------- */
+.resume-icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  background: #1f1f1f;
+}
+
+.resume-icon.frontend {
+  background: #7c3aed;
+}
+
+.resume-icon.backend {
+  background: #facc15;
+}
+
+.resume-icon.ml {
+  background: #22c55e;
+}
+
+.resume-icon.other {
+  background: #38bdf8;
+}
+
+/* ---------- ACTIONS ---------- */
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.btn-outline {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #facc15;
+  color: black;
+  border-color: #facc15;
+}
+
+/* ---------- COUNT ---------- */
+.resume-count {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ---------- MODAL ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #2b2b2b;
+  padding: 25px;
+  border-radius: 12px;
+  width: 70%;
+  max-width: 800px;
+}
+
+.modal-box h3 {
+  margin-bottom: 10px;
+}
+
+.modal-box iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .resume-filter {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .resume-filter button,
+  .upload-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .resume-card {
+    padding: 15px;
+  }
+
+  .resume-card h3 {
+    font-size: 13px;
+  }
+
+  .modal-box {
+    width: 80%;
+  }
+
+  .modal-box iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .resume-filter {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .resume-filter button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .upload-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .resume-card {
+    padding: 12px;
+  }
+
+  .resume-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .resume-card h3 {
+    font-size: 12px;
+    margin: 8px 0 4px;
+  }
+
+  .resume-type {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .resume-actions {
+    gap: 8px;
+  }
+
+  .btn-outline {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .resume-count {
+    font-size: 11px;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .modal-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-box h3 {
+    font-size: 16px;
+  }
+
+  .modal-box iframe {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .modal-box button {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+}
